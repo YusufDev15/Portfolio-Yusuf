@@ -9,7 +9,67 @@ body {
   line-height: 1.5;
 }
 
-h1,
+/* sets the header */
+header {
+  /* sets header padding to 20px all around */
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* sets the header background colour & colour of text */
+  background-color: green;
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+h1 {
+  /* sets the h1 text as an inline-block and font size */
+  display: inline-block;
+  font-size: 40px;
+  margin: 0;
+  padding-left: 20px;
+  color: black;
+}
+
+header nav {
+  padding-top: 15px;
+  padding-right: 20px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+header nav ul {
+  /* overrides the default list-style and sets it to none */
+  list-style: none;
+}
+
+/* list items in navigation bar */
+header nav ul li {
+  /* sets display to inline-block */
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  /* sets the colour and the text-decoration of the anchor element*/
+  color: black;
+  text-decoration: underline;
+}
+
+/* change colour on hover */
+a:hover {
+  /* background-color: black; */
+  color: white;
+}
+
+/* .hero-banner {
+  background-image: url("../images/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg");
+}
+
+
 h2,
 h3,
 h4,
@@ -20,4 +80,4 @@ h6 {
 
 p {
   margin: 0;
-}
+} */
