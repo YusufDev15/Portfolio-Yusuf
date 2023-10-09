@@ -16,11 +16,14 @@ header {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   /* sets the header background colour & colour of text */
-  background-color: green;
+  background-color: rgb(15, 14, 14);
   color: #ffffff;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  width: 100%; */
 }
 
 h1 {
@@ -29,7 +32,7 @@ h1 {
   font-size: 40px;
   margin: 0;
   padding-left: 20px;
-  color: black;
+  color: white;
 }
 
 header nav {
@@ -55,18 +58,38 @@ header nav ul li {
 
 a {
   /* sets the colour and the text-decoration of the anchor element*/
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 
 /* change colour on hover */
 a:hover {
   /* background-color: black; */
-  color: white;
+  color: darkcyan;
 }
 
-/* .hero-banner {
-  background-image: url("../images/matrix-style-binary-code-digital-background-with-falling-numbers_1017-25336.jpg");
+.hero-banner {
+  height: 800px;
+  width: 100%;
+  margin-bottom: 25px; 
+  background-image: url("../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+#headline {
+  border-left: 5px solid black;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 2;
+  padding: 25px;
+  position: absolute;
+  right: 30px;
+  bottom: 110px;
+  max-width: 600px;
+}
+
+#headline:hover {
+  border-left: 5px solid white;
 }
 
 
@@ -76,8 +99,9 @@ h4,
 h5,
 h6 {
   margin: 0;
+  color: darkcyan;
 }
 
 p {
   margin: 0;
-} */
+}
