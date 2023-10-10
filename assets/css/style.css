@@ -5,7 +5,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -20,6 +21,9 @@ h6 {
 
 p {
   margin: 0;
+}
+a {
+  text-decoration: none;
 }
 
 /* sets the header */
@@ -86,11 +90,9 @@ a:hover {
 
 /* Nav bar code end */
 
-
 .hero-banner {
   height: 800px;
-  /* width: 100%; */
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
   background-image: url("../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.webp");
   background-size: cover;
   background-position: center;
@@ -121,10 +123,17 @@ main .page-section {
   margin-bottom: 25px;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
 /* targets the h2 that are the children of sections */
 section h2 {
   flex: 0 0 10ch;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 50px;
   color: black;
 }
@@ -141,10 +150,9 @@ section .div-box {
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "horiseon horiseon"
-  "led-wall calculator"
-  "puzzels run"
-  ;
+    "horiseon horiseon"
+    "led-wall calculator"
+    "puzzels run";
 }
 
 #horiseon-marketing-website {
@@ -155,7 +163,7 @@ section .div-box {
 #led-wall {
   grid-area: led-wall;
   background-image: url("../images/02-portfolio-1.jpg");
-} 
+}
 
 #calculator {
   grid-area: calculator;
@@ -183,7 +191,7 @@ section .div-box {
 }
 
 .heading {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 15px;
   height: 50px;
   color: white;
@@ -203,50 +211,21 @@ section .div-box {
   text-decoration: underline;
 }
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 1000px) {
   #headline {
     position: static;
     text-align: center;
   }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
   #grid-box {
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
-    grid-template-areas:
-    "horiseon" "led-wall" "calculator" "puzzels" "run"
-    ;
+    grid-template-areas: "horiseon" "led-wall" "calculator" "puzzels" "run";
   }
 
   nav a {
     display: none;
   }
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
