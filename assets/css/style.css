@@ -9,6 +9,19 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 /* sets the header */
 header {
   /* sets header padding to 20px all around */
@@ -26,7 +39,7 @@ header {
   width: 100%; */
 }
 
-h1 {
+header h1 {
   /* sets the h1 text as an inline-block and font size */
   display: inline-block;
   font-size: 40px;
@@ -35,6 +48,7 @@ h1 {
   color: white;
 }
 
+/* Nav bar code */
 header nav {
   padding-top: 15px;
   padding-right: 20px;
@@ -56,7 +70,7 @@ header nav ul li {
   margin-left: 25px;
 }
 
-a {
+header a {
   /* sets the colour and the text-decoration of the anchor element*/
   color: white;
   text-decoration: underline;
@@ -70,13 +84,19 @@ a:hover {
   transition: all 1s ease;
 }
 
+/* Nav bar code end */
+
+
 .hero-banner {
   height: 800px;
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 25px; 
   background-image: url("../images/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3AtMjAwLWV5ZS0wMzQyNzAyLmpwZw.webp");
   background-size: cover;
   background-position: center;
+  padding: 20px;
+  color: cyan;
+  font-size: 20px;
 }
 
 #headline {
@@ -85,8 +105,6 @@ a:hover {
   z-index: 2;
   padding: 25px;
   position: absolute;
-  right: 30px;
-  bottom: 110px;
   max-width: 600px;
 }
 
@@ -95,11 +113,12 @@ a:hover {
 }
 
 /* targets all 3 page-section class */
-.page-section {
+main .page-section {
   display: flex;
   flex-wrap: wrap;
   padding: 0 5px;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 /* targets the h2 that are the children of sections */
@@ -110,18 +129,125 @@ section h2 {
   color: black;
 }
 
-div {
+section .div-box {
   flex: 1 1 0;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+#grid-box {
+  margin: 0px;
+  display: grid;
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "horiseon horiseon"
+  "led-wall calculator"
+  "puzzels run"
+  ;
 }
 
-p {
-  margin: 0;
+#horiseon-marketing-website {
+  grid-area: horiseon;
+  background-image: url("../images/digital-marketing-meeting.jpg");
 }
+
+#led-wall {
+  grid-area: led-wall;
+  background-image: url("../images/02-portfolio-1.jpg");
+} 
+
+#calculator {
+  grid-area: calculator;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#pastel-puzzels {
+  grid-area: puzzels;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#run-buddy {
+  grid-area: run;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.gridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  cursor: pointer;
+  display: grid;
+  align-content: flex-start;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid black;
+  position: relative;
+  top: 250px;
+}
+
+#contact div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact a {
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #horiseon-marketing-website {
+  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-size: cover;
+}
+
+.gridArea {
+  flex: 1 0 100px;
+  background-color: blueviolet;
+  height: 200px;
+}
+
+.gridArea:first-child {
+  flex-basis: 100%;
+}
+
+h3 {
+  color:cyan;
+  display: flex;
+} */
