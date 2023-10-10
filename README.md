@@ -5,7 +5,6 @@ As a new developer one of the things i will need is a portfolio to showcase my s
 ## Installation
 
 Theres no installation required, this is a standard HTML file.
-```
     
 ## Usage/Examples
 
