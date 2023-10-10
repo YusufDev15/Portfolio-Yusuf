@@ -8,7 +8,7 @@ Theres no installation required, this is a standard HTML file.
     
 ## Usage/Examples
 
-![alt text](./assets/images/avatar-generations_prsz.jpg)
+![alt text](./assets/images/screencapture-file-C-Users-Yusuf-OneDrive-Desktop-class-Challenges-04-responsive-portfolio-challenge-Portfolio-Yusuf-index.png)
 
 
 
